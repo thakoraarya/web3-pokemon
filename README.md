@@ -1,6 +1,4 @@
-# web3-pokemon
-
-
+# Pokemon Cards on Web 3.0
 
 ## Commit Message Convention
 
@@ -13,26 +11,36 @@ Commit message will be checked using [husky and commit lint](https://theodoruscl
 `<type>(optional scope): <description>`
 Example: `feat(pre-event): add speakers section`
 
-### 1. Type
+### 1. Commit types
 
-Available types are:
+| Commit Type | Title                    | Description                                                                                                 | Emoji  |
+| ----------- | ------------------------ | ----------------------------------------------------------------------------------------------------------- |:------:|
+| `feat`      | Features                 | A new feature                                                                                               | ✨     |
+| `fix`       | Bug Fixes                | A bug Fix                                                                                                   | 🐛     |
+| `docs`      | Documentation            | Documentation only changes                                                                                  | 📚     |
+| `style`     | Styles                   | Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)      | 💎     |
+| `refactor`  | Code Refactoring         | A code change that neither fixes a bug nor adds a feature                                                   | 📦     |
+| `perf`      | Performance Improvements | A code change that improves performance                                                                     | 🚀     |
+| `test`      | Tests                    | Adding missing tests or correcting existing tests                                                           | 🚨     |
+| `build`     | Builds                   | Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)         | 🛠     |
+| `ci`        | Continuous Integrations  | Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs) | ⚙️     |
+| `chore`     | Chores                   | Other changes that don't modify src or test files                                                           | ♻️     |
+| `revert`    | Reverts                  | Reverts a previous commit                                                                                   | 🗑     |
 
-- feat → Changes about addition or removal of a feature. Ex: `feat: add table on landing page`, `feat: remove table from landing page`
-- fix → Bug fixing, followed by the bug. Ex: `fix: illustration overflows in mobile view`
-- docs → Update documentation (README.md)
-- style → Updating style, and not changing any logic in the code (reorder imports, fix whitespace, remove comments)
-- chore → Installing new dependencies, or bumping deps
-- refactor → Changes in code, same output, but different approach
-- ci → Update github workflows, husky
-- test → Update testing suite, cypress files
-- revert → when reverting commits
-- perf → Fixing something regarding performance (deriving state, using memo, callback)
-- vercel → Blank commit to trigger vercel deployment. Ex: `vercel: trigger deployment`
-- breaking: Breaking Changes
-- deps: Dependencies
-- build: Build System
-- chore: Chores
-- other: Other Changes
+## Commit aliases
+
+Aliases allow to have additionnal commit types (in a tool like [commitizen](https://github.com/commitizen/cz-cli) for example) that can be formatted to follow [AngularJS Commit Message Conventions](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit).
+
+For example the [commitizen](https://github.com/commitizen/cz-cli) CLI can present the choice `initial` and the final commit message will be 'feat: Initial commit 🎉'
+
+| Commit Type        | Maps to | Title             | Description                     | Emoji  |
+| ------------------ | ------- | ----------------- | ------------------------------  |:------:|
+| `initial`          | `feat`  | Initial           | Initial commit                  | 🎉     |
+| `dependencies`     | `fix`   | Dependencies      | Update dependencies             | ⏫     |
+| `peerDependencies` | `fix`   | Peer dependencies | Update peer dependencies        | ⬆️     |
+| `devDependencies`  | `chore` | Dev dependencies  | Update development dependencies | 🔼     |
+| `metadata`         | `fix`   | Metadata          | Update metadata (package.json)  | 📦     |
+
 
 ### 2. Optional Scope
 
