@@ -1,6 +1,4 @@
-# Awesome Blockchain
-
-[![Awesome](https://awesome.re/badge.svg)](https://github.com/yjjnls/awesome-blockchain)
+# Blockchain
 
 > Curated list of resources for the development and applications of block chain.
 
